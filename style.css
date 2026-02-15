@@ -1,0 +1,138 @@
+:root {
+  --bg: #F4F1E9;
+  --ink: #1B1F3B;
+  --muted: #6B7080;
+  --border: #E2DBC8;
+  --card: #FFFEF8;
+  --accent: #2ED573;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0; padding: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Inter", "Segoe UI", system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrap {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 56px 28px 80px;
+}
+
+header {
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 20px;
+  margin-bottom: 28px;
+}
+
+header .brand {
+  font-weight: 700;
+  font-size: 21px;
+  letter-spacing: -0.01em;
+  margin: 0 0 4px;
+}
+
+header .nav {
+  margin-top: 8px;
+  display: flex; gap: 18px;
+  font-size: 14px;
+}
+
+header .nav a {
+  color: var(--muted);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 2px;
+}
+
+header .nav a:hover, header .nav a.current {
+  color: var(--ink);
+  border-bottom-color: var(--ink);
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin: 0 0 8px;
+}
+
+.subtitle {
+  color: var(--muted);
+  font-size: 14px;
+  margin-bottom: 32px;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 36px 0 12px;
+  letter-spacing: -0.01em;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 22px 0 8px;
+}
+
+p { margin: 0 0 14px; }
+
+a { color: var(--ink); text-decoration: underline; text-underline-offset: 2px; }
+
+ul { padding-left: 22px; margin: 8px 0 16px; }
+li { margin-bottom: 6px; }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 14px 0 22px;
+  font-size: 14px;
+}
+
+th, td {
+  text-align: left;
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+}
+
+th {
+  font-weight: 600;
+  background: var(--card);
+  font-size: 13px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 18px 22px;
+  margin: 18px 0;
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 6px 14px;
+  font-size: 14px;
+  margin: 12px 0;
+}
+
+footer {
+  border-top: 1px solid var(--border);
+  margin-top: 56px;
+  padding-top: 18px;
+  color: var(--muted);
+  font-size: 13px;
+  display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px;
+}
